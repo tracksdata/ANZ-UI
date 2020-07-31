@@ -1,0 +1,26 @@
+stage-1
+    1-java script
+        - rx - js -observable streams - angular
+        - promise  api  - react
+    2-HTML
+    3-Web UI
+    4-XML & JSON
+    5-HTML5 API's
+    6-Unit Testing
+    8-Linting-tool
+
+state-2
+    1-React - AXIOS and asynch - await-
+    2-Redux
+    3-React-Redux with observable streams
+
+state-3
+    1-Node-core
+    2-Express
+    3-sample apis with node and express js
+    4-Node-advanced
+
+state-4
+    1-api-server
+    2-ui
+
