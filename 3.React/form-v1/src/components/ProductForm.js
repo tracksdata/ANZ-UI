@@ -16,26 +16,51 @@ const ProductForm = ({ submitForm }) => {
               <input 
               type="text" 
               name="id" 
-              className={"form-control (errors.id? is-valid: is-invalid)"}
+              className={
+                "form-control  " + (errors.id ? "is-invalid" : "")
+              }
               value={product.id}
               onChange={handleChange}
               />
-              {errors.id}
+              <spam className="text-danger">{errors.id}</spam>
             </div>
             <div>
               <label>Product Name</label>
-              <input type="text" name="name" className="form-control" />
-              {errors.name}
+              <input type="text" 
+              name="name" 
+              className={
+                "form-control  " + (errors.name ? "is-invalid" : "")
+              }
+              onChange={handleChange}
+
+              />
+              <spam className="text-danger">{errors.name}</spam>
             </div>
             <div>
               <label>Price</label>
-              <input type="text" name="price" className="form-control" />
-              {errors.price}
+              <input 
+              type="text" 
+              name="price" 
+              className={
+                "form-control  " + (errors.price ? "is-invalid" : "")
+              } 
+              onChange={handleChange}
+
+              />
+              <spam className="text-danger">{errors.price}</spam>
             </div>
             <div>
               <label>Description</label>
-             <textarea className="form-control" name="description"></textarea>
-             {errors.description}
+             <textarea 
+              className={
+                "form-control  " + (errors.description ? "is-invalid" : "")
+              }
+              onChange={handleChange}
+
+             name="description">
+    
+             </textarea>
+             <spam className="text-danger">{errors.description}</spam>
             </div>
             <div className="text-center mt-3">
               <button className="btn btn-primary">Submit</button>
